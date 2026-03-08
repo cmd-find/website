@@ -198,6 +198,7 @@ html:has(.prose-page) {
 @media (max-width: 768px) {
     body:not(.prose-page) {
         overflow: auto;
+        padding: 24px 0;
     }
 
     .card {
@@ -205,6 +206,7 @@ html:has(.prose-page) {
         height: auto;
         padding: 32px 28px;
         margin-top: 0;
+        overflow: visible;
     }
 
     .card h1 {

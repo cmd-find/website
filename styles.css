@@ -37,14 +37,86 @@
 html,
 body {
     height: 100%;
-    overflow: hidden;
     background: var(--color-body-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         sans-serif;
+}
+
+body:not(.prose-page) {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prose-page,
+html:has(.prose-page) {
+    height: auto;
+}
+
+.prose-page {
+    padding: 64px 24px 96px;
+}
+
+.prose-page main {
+    max-width: 640px;
+    margin: 0 auto;
+    color: var(--color-text-primary);
+}
+
+.prose-page h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 8px;
+}
+
+.prose-page h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.prose-page p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--color-text-primary);
+    margin-bottom: 12px;
+}
+
+.prose-page ul {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--color-text-primary);
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+
+.prose-page li {
+    margin-bottom: 4px;
+}
+
+.prose-page a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.prose-page a:hover {
+    color: var(--color-heading);
+}
+
+.prose-page code {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.prose-page strong {
+    color: var(--color-heading);
+    font-weight: 600;
 }
 
 .card {

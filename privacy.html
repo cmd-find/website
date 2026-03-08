@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy — cmd-find</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="prose-page">
+        <main>
+            <h1>Privacy Policy</h1>
+            <p>Last updated: March 8, 2025</p>
+
+            <h2>Overview</h2>
+            <p>
+                cmd-find is a browser extension that lets you ask questions
+                about any web page using an AI provider of your choice. It has
+                no backend, no accounts, and no analytics. Your data never
+                passes through our servers.
+            </p>
+
+            <h2>What we collect</h2>
+            <p>cmd-find does not collect any user data. Specifically:</p>
+            <ul>
+                <li>
+                    No personal information is collected or stored externally.
+                </li>
+                <li>No usage data, telemetry, or analytics are gathered.</li>
+                <li>No web history or page content is logged anywhere.</li>
+            </ul>
+
+            <h2>What is stored locally</h2>
+            <p>
+                The following settings are stored in your browser using
+                <code>chrome.storage.local</code> and never leave your device:
+            </p>
+            <ul>
+                <li>
+                    Your API key for your chosen provider (OpenAI, Anthropic, or
+                    Google)
+                </li>
+                <li>Your selected provider and model</li>
+                <li>Your theme preference</li>
+                <li>
+                    Your per-site query history (up to 25 entries per hostname)
+                </li>
+            </ul>
+
+            <h2>API calls</h2>
+            <p>
+                When you submit a query, the text of the current page and your
+                question are sent directly from your browser to your chosen AI
+                provider's API endpoint. This request uses your own API key and
+                is subject to that provider's privacy policy:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://openai.com/policies/privacy-policy"
+                        >OpenAI Privacy Policy</a
+                    >
+                </li>
+                <li>
+                    <a href="https://www.anthropic.com/privacy"
+                        >Anthropic Privacy Policy</a
+                    >
+                </li>
+                <li>
+                    <a href="https://policies.google.com/privacy"
+                        >Google Privacy Policy</a
+                    >
+                </li>
+            </ul>
+            <p>No other network requests are made by this extension.</p>
+
+            <h2>Permissions</h2>
+            <p>
+                The extension requests the following permissions and uses them
+                solely as described:
+            </p>
+            <ul>
+                <li>
+                    <strong>storage</strong> — to save your settings and query
+                    history locally in your browser.
+                </li>
+                <li>
+                    <strong>Host permissions</strong> (api.openai.com,
+                    api.anthropic.com, generativelanguage.googleapis.com) — to
+                    allow direct API calls to your chosen provider from the
+                    extension.
+                </li>
+            </ul>
+
+            <h2>Third parties</h2>
+            <p>
+                We do not sell, share, or transfer any user data to third
+                parties. The only external communication the extension performs
+                is the direct API call to the provider you configure, using your
+                own credentials.
+            </p>
+
+            <h2>Changes</h2>
+            <p>
+                If this policy changes, the updated version will be posted at
+                this URL with a revised date at the top.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Questions? Reach out to me at
+                <a href="mailto:contact@owencmcgrath.com"
+                    >contact@owencmcgrath.com</a
+                >
+            </p>
+        </main>
+    </body>
+</html>

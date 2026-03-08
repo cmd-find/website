@@ -228,6 +228,7 @@ html:has(.prose-page) {
     .mobile-description {
         display: block;
         margin-bottom: 24px;
+        color: var(--color-text-primary);
     }
 
     .install-link {

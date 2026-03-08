@@ -1,3 +1,31 @@
+:root {
+    --color-body-bg: #111113;
+    --color-card-bg: #1c1c1e;
+    --color-card-border: #3a3a3c;
+    --color-heading: #f5f5f7;
+    --color-text-primary: #d1d1d6;
+    --color-text-secondary: #8e8e93;
+    --color-link: #636366;
+    --color-link-hover: #8e8e93;
+    --shadow-lg: rgba(0, 0, 0, 0.6);
+    --shadow-sm: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-body-bg: #f2f2f7;
+        --color-card-bg: #ffffff;
+        --color-card-border: #d1d1d6;
+        --color-heading: #1c1c1e;
+        --color-text-primary: #3a3a3c;
+        --color-text-secondary: #6c6c70;
+        --color-link: #aeaeb2;
+        --color-link-hover: #6c6c70;
+        --shadow-lg: rgba(0, 0, 0, 0.08);
+        --shadow-sm: rgba(0, 0, 0, 0.04);
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -10,7 +38,7 @@ html,
 body {
     height: 100%;
     overflow: hidden;
-    background: #111113;
+    background: var(--color-body-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,12 +50,12 @@ body {
 .card {
     width: 65vw;
     height: 68vh;
-    background: #1c1c1e;
+    background: var(--color-card-bg);
     border-radius: 16px;
-    border: 1px solid #3a3a3c;
+    border: 1px solid var(--color-card-border);
     box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.6),
-        0 4px 16px rgba(0, 0, 0, 0.4);
+        0 20px 60px var(--shadow-lg),
+        0 4px 16px var(--shadow-sm);
     padding: 48px 56px;
     overflow: hidden;
     margin-bottom: 20vh;
@@ -39,24 +67,24 @@ body {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #f5f5f7;
+    color: var(--color-heading);
 }
 
 .card .subtitle {
     font-size: 29px;
-    color: #8e8e93;
+    color: var(--color-text-secondary);
     margin-bottom: 32px;
 }
 
 .card p {
     font-size: 15px;
     line-height: 1.7;
-    color: #d1d1d6;
+    color: var(--color-text-primary);
     margin-bottom: 18px;
 }
 
 .card p ~ p {
-    color: #8e8e93;
+    color: var(--color-text-secondary);
 }
 
 .install-link {
@@ -67,13 +95,13 @@ body {
     align-self: flex-end;
     font-size: 14px;
     font-weight: 500;
-    color: #636366;
+    color: var(--color-link);
     text-decoration: none;
     transition: color 0.15s ease;
 }
 
 .install-link:hover {
-    color: #8e8e93;
+    color: var(--color-link-hover);
 }
 
 .install-link .arrow {

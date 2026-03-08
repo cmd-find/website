@@ -21,7 +21,7 @@ if (engine === "webkit") {
     card.innerHTML = `
         <h1>cmd-find</h1>
         <p class="subtitle">semantic search on any webpage</p>
-        <p>cmd-find is not currently available on Safari, but check the GitHub page for updates!</p>
+        <p>cmd-find is not available on Safari yet — check the GitHub page for updates!</p>
         <a class="install-link" href="${GITHUB_URL}" target="_blank" rel="noopener">
             github <span class="arrow">→</span>
         </a>

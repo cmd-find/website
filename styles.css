@@ -159,6 +159,10 @@ html:has(.prose-page) {
     color: var(--color-text-secondary);
 }
 
+.mobile-description {
+    display: none;
+}
+
 .demo-video-wrapper {
     flex: 1 1 0;
     min-height: 0;
@@ -193,4 +197,41 @@ html:has(.prose-page) {
 
 .install-link .arrow {
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    body:not(.prose-page) {
+        overflow: auto;
+        padding: 24px 0;
+    }
+
+    .card {
+        width: 90vw;
+        height: auto;
+        padding: 32px 28px;
+        margin-top: 0;
+        overflow: visible;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+
+    .card .subtitle {
+        font-size: 20px;
+    }
+
+    .demo-video-wrapper {
+        display: none;
+    }
+
+    .mobile-description {
+        display: block;
+        margin-bottom: 24px;
+        color: var(--color-text-primary);
+    }
+
+    .install-link {
+        align-self: flex-start;
+    }
 }

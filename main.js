@@ -10,7 +10,10 @@ function detectEngine() {
   const ua = navigator.userAgent;
   if (typeof InstallTrigger !== "undefined" || ua.includes("Firefox"))
     return "gecko";
-  if (window.chrome) return "blink";
+  if (window.chrome) {
+    if (ua.includes("Edg/")) return "edge";
+    return "blink";
+  }
   if (ua.includes("AppleWebKit")) return "webkit";
   return "blink";
 }
